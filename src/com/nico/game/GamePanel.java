@@ -93,12 +93,15 @@ public class GamePanel extends JPanel implements Runnable {
         try {
           Thread.sleep(1);
         } catch (Exception e) {
+          System.out.println("Hello");
           System.out.println("ERROR: yielding thread");
         }
         now = System.nanoTime();
       }
     }
   }
+
+
 
   private int x = 0;
 
